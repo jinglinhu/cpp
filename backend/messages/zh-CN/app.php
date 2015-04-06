@@ -76,7 +76,7 @@ return [
     'Create User Id' => '创建用户',
     'Update User Id' => '更新用户',
     'Organization' =>'组织机构',
-
+    'Verification Code'=>'验证码',
     'Directly Input Time' => '可直接输入日期，格式：2015-01-01',
 
 
