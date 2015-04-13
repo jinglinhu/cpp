@@ -45,7 +45,7 @@ use yii\helpers\Html;
                     <div class="pull-left">
                         <?= Html::a(
                             Yii::t('app', 'Home'),
-                            ['/site/'],
+                            [Yii::$app->homeUrl],
                             ['class' => 'btn btn-default btn-flat']
                         ) ?>
                     </div>

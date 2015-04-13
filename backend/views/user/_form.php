@@ -62,7 +62,7 @@ foreach (Yii::$app->params['avatar_url'] as $v) {
                     'name' =>  'User[oid]', // input name
                     'value' => $model->oid,     // values selected (comma separated for multiple select)
                     'asDropdown' => false,   // will render the tree input widget as a dropdown.
-                    'multiple' => false,     // set to false if you do not need multiple selection
+                    'multiple' => true,     // set to false if you do not need multiple selection
                     'fontAwesome' => false,  // render font awesome icons
                     'rootOptions' => [
                         'style'=>'display:none'

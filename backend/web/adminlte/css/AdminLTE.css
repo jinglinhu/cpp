@@ -1320,9 +1320,9 @@ body > .header .logo .icon {
   position: absolute;
   top: auto;
   bottom: 5px;
-  right: 5px;
+  right: 20px;
   z-index: 0;
-  font-size: 90px;
+  font-size: 40px;
   color: rgba(0, 0, 0, 0.15);
 }
 .small-box:hover {
@@ -1348,18 +1348,18 @@ body > .header .logo .icon {
 }
 @keyframes tansformAnimation {
   from {
-    font-size: 90px;
+    font-size: 40px;
   }
   to {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 @-webkit-keyframes tansformAnimation {
   from {
-    font-size: 90px;
+    font-size: 40px;
   }
   to {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2549,7 +2549,7 @@ Component: timeline
 */
 /* skin-blue navbar */
 .skin-blue .navbar {
-  background-color: #3c8dbc;
+  background-color: #3C8DCC;
 }
 .skin-blue .navbar .nav a {
   color: rgba(255, 255, 255, 0.8);

@@ -1,3 +1,7 @@
+<?php
+/* @var $this yii\web\View */
+$this->title = '图标';
+?>
 <div class="tab-content">
                                     <!-- Font Awesome icons -->
                                     <div class="tab-pane active" id="fa-icons">

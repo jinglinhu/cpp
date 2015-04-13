@@ -26,8 +26,8 @@ AppAsset::register($this);
     <header class="header">
         <a href="<?= Yii::$app->homeUrl ?>" class="logo">
             <!-- Add the class icon to your logo image or logo icon to add the margining -->
-          <?= Html::img(Yii::$app->homeUrl.'adminlte/img/zjsy_01.jpg', ['class' => 'img-circle', 'alt' => 'logo','width' => '55px', 'height' => '40px']) ?>
-          中&nbsp;國&nbsp;建&nbsp;築
+          <!-- <?= Html::img(Yii::$app->homeUrl.'adminlte/img/zjsy_01.jpg', ['class' => 'img-circle', 'alt' => 'logo','width' => '55px', 'height' => '40px']) ?> -->
+          CSCEC 中&nbsp;國&nbsp;建&nbsp;築
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -68,6 +68,7 @@ AppAsset::register($this);
 
         <!-- Right side column. Contains the navbar and content of the page -->
         <aside class="right-side">
+            <?php if(Yii::$app->controller->id != 'site'){?>
             <!-- Content Header (Page header) -->
             <section class="content-header">
                     <?= $this->title ?>
@@ -86,7 +87,7 @@ AppAsset::register($this);
                     ]
                 ) ?>
             </section>
-
+            <?php }?>
             <!-- Main content -->
             <section class="content">
                 <?= Alert::widget() ?>

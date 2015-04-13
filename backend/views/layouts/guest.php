@@ -13,11 +13,9 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <title><?= Html::encode($this->title); ?></title>
+    <title><?= Html::encode($this->title).'－集中采购网络交易平台'; ?></title>
     <?= Html::csrfMetaTags(); ?>
     <?php $this->head(); ?>
-
-
 </head>
 <body class="bg-white" style="min-height: 790px">
 <?php $this->beginBody() ?>
@@ -27,4 +25,5 @@ AppAsset::register($this);
 </body>
 </html>
 <?php $this->endPage() ?>
+
 

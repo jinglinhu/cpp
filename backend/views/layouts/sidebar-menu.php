@@ -2,6 +2,11 @@
 use mdm\admin\components\MenuHelper;
 use common\widgets\Menu;
 
+$items_site[] =[
+    'label' => '首页',
+    'url' =>['/site/index'],
+    'icon' => 'fa-dashboard',
+];
 $callback = function ($menu) {
      $return =[
          'label' => $menu['name'],
@@ -17,7 +22,11 @@ $callback = function ($menu) {
  };
 
 $items = MenuHelper::getAssignedMenu(Yii::$app->user->id, null, $callback);
-    
+
+
+$items = array_merge($items_site,$items);
+
+#print_r($items);exit;
 echo Menu::widget(
     [
         'options' => [
