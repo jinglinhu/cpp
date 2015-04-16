@@ -5,6 +5,8 @@ use yii\grid\ActionColumn;
 use yii\helpers\Html;
 use backend\models\User;
 use yii\helpers\ArrayHelper;
+use yii\widgets\Pjax;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\UserSearch */
@@ -121,7 +123,13 @@ if ($showActions === true) {
             ]
         ); ?>
         
-        <?= GridView::widget($gridConfig); ?>
+        <?php 
+            Pjax::begin(['formSelector' => 'form', 'enablePushState' => false]);
+
+            echo GridView::widget($gridConfig); 
+
+            Pjax::end();
+        ?>
        
        <?php  Box::end(); ?>
 
